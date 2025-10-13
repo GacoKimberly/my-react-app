@@ -1,17 +1,37 @@
-import React from 'react';
-import './App.css';
-import Navbar from './components/Navbar';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
-function App() {
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Profile from "./pages/Profile";
+import Skills from "./pages/Skills";
+import Contact from "./pages/Contact";
+
+export default function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <main style={{ padding: '2rem', maxWidth: 900, margin: '1rem auto', color: '#cbd5e1' }}>
-        <h1>Welcome to MyFood</h1>
-        <p>This is a demo page to test the Navbar component. Resize the browser to see the mobile menu.</p>
-      </main>
+    <div
+      style={{
+        minHeight: "100vh",
+        background: "linear-gradient(135deg, #ec0e93ff 0%, #3d43b8ff 40%, #000000ff 100%)",
+        color: "#ffffff",
+        fontFamily: "'Poppins', sans-serif",
+      }}
+    >
+      <Router>
+        <Navbar />
+        <main style={{ padding: "5rem 1rem 3rem", maxWidth: "1000px", margin: "0 auto" }}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/profile" element={<Profile />} />
+            <Route path="/skills" element={<Skills />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </main>
+        <Footer />
+      </Router>
     </div>
   );
 }
-
-export default App;
