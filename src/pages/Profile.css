@@ -1,0 +1,26 @@
+.profile-page {
+  padding: 3rem;
+  color: rgb(255, 255, 255);
+  text-align: left;
+}
+
+.profile-content {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.profile-photo {
+  width: 160px;
+  height: 160px;
+  border-radius:50%;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  border: 3px solid #ddd;
+}
+
+.profile-info p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
