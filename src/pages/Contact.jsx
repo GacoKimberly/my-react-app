@@ -17,7 +17,7 @@ export default function Contact() {
         <p><FontAwesomeIcon icon={faEnvelope} />  gacokimberly18@gmail.com</p>
         <p>
           <FontAwesomeIcon icon={faGithub} />  
-          <a href="https://github.com/yourusername" target="_blank" rel="noreferrer">
+          <a href="https://github.com/GacoKimberly" target="_blank" rel="noreferrer">
             https://github.com/GacoKimberly
           </a>
         </p>
