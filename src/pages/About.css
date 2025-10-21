@@ -1,0 +1,30 @@
+.about-section {
+  text-align: center; /* aligns paragraph and icons to center */
+  background-color: #a096964a;
+  padding: 40px;
+  border-radius: 12px;
+  max-width: 600px;
+  margin: 50px auto;
+  box-shadow: 0 4px 10px rgba(243, 242, 242, 0.1);
+}
+
+.about-text {
+  color: #050505;
+  margin-bottom: 20px;
+}
+
+.about-info p {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #0d0d0d;
+}
+
+.about-info a {
+  color: #0d0d0d;
+  text-decoration: none;
+  margin-left: 5px;
+}
+
+.about-info a:hover {
+  text-decoration: underline;
+}

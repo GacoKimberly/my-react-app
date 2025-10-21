@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background: #000;
+  scroll-behavior: smooth;
+}
+
+main {
+  position: relative;
+  min-height: 80vh;
+}

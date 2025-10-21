@@ -1,0 +1,43 @@
+.home-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  background-color: #7269694b; /* optional light background */
+}
+
+.home-text {
+  flex: 1;
+  text-align: left;
+  max-width: 60%;
+}
+
+.home-text h1 {
+  font-size: 2rem;
+  color: #040404;
+}
+
+.home-text h4 {
+  font-size: 1.2rem;
+  color: #efe6e6;
+  margin-top: 10px;
+}
+
+.home-text p {
+  margin-top: 15px;
+  line-height: 1.6;
+  color: #010101;
+}
+
+.home-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.home-image img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(228, 221, 221, 0);
+}
