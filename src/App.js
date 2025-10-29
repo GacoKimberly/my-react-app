@@ -5,9 +5,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
 import Home from "./pages/Home";
-import About from "./pages/About";
 import Profile from "./pages/Profile";
-import Skills from "./pages/Skills";
 import Contact from "./pages/Contact";
 
 function AnimatedRoutes() {
@@ -30,19 +28,6 @@ function AnimatedRoutes() {
           }
         />
         <Route
-          path="/about"
-          element={
-            <motion.div
-              initial={{ opacity: 0, y: 100 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -100 }}
-              transition={{ duration: 0.6, ease: "easeInOut" }}
-            >
-              <About />
-            </motion.div>
-          }
-        />
-        <Route
           path="/profile"
           element={
             <motion.div
@@ -52,19 +37,6 @@ function AnimatedRoutes() {
               transition={{ duration: 0.6, ease: "easeInOut" }}
             >
               <Profile />
-            </motion.div>
-          }
-        />
-        <Route
-          path="/skills"
-          element={
-            <motion.div
-              initial={{ opacity: 0, y: 100 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -100 }}
-              transition={{ duration: 0.6, ease: "easeInOut" }}
-            >
-              <Skills />
             </motion.div>
           }
         />
