@@ -24,26 +24,6 @@ section {
   }
 }
 
-.container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-/* Make items stack on smaller screens */
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  img {
-    width: 80%;
-  }
-}
-
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
